@@ -1,0 +1,42 @@
+.mat-tab-label {
+    max-width: 33% !important;
+    min-width: 33% !important;
+    font-family: Roboto-Regular !important;
+}
+
+.mat-tab-labels {
+    display: block !important;
+}
+
+.mat-tab-list {
+    display: block !important;
+}
+
+.mat-tab-label-active {
+    color: #037dd6;
+    border-bottom: 2px solid #006ec9;
+}
+
+.mat-tab-label-container {
+    display: block !important;
+}
+
+#mat-tab-label-0-1 {
+    opacity: 1;
+}
+
+#mat-tab-label-0-2 {
+    opacity: 1;
+}
+
+#mat-tab-label-0-0 {
+    opacity: 1;
+}
+
+.mat-ripple-element {
+    display: none !important;
+}
+
+.mat-tab-header-pagination {
+    display: none !important;
+}

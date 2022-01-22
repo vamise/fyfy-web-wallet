@@ -1,0 +1,104 @@
+<div class="homeMain bg-c" id=content>
+    <div class="headrHome">
+        <div class="headBox">
+            <div>
+                <img height="30px" src="https://metamask.io/images/mm-logo.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="contentHomeMain">
+        <div class="searchTokensBox">
+            <div class="hTokens">
+                <h1>Import Wallet</h1>
+                <mat-tab-group animationDuration="0ms">
+                    <mat-tab label="Import">
+                        <div style="display: flex; flex-direction: column;">
+                            <p style="    margin: 0px 0px 20px;
+                            font-family: 'Euclid Circular B', sans-serif;
+                            color: #000;
+                            font-size: 16px;
+                            line-height: 22px;
+                            font-weight: 400;
+                            margin-top: 40px;
+                            margin-left: 20px;">Enter your Private Key</p>
+                            <input style="    height: 54px!important;
+                            border: 1px solid #d2d8dd!important;
+                            border-radius: 4px!important;
+                            background-color: #fff!important;
+                            color: #36a4ff!important;
+                            font-family: Roboto-Regular;
+                            font-size: 16px!important;
+                            padding: 0 20px!important;
+                            margin-left: 20px;
+                            margin-right: 20px;" placeholder="Insert your private key here:" [(ngModel)]="importText" />
+                            <button class="btn-blue" style="margin: 25px 0 14px;
+                            margin-top: 60px;
+                            height: 44px;
+                            font-family: Roboto-Regular;" (click)="submit('import')">
+                            Import
+                            </button>
+                        </div>
+                    </mat-tab>
+                    <mat-tab label="Ledger">
+                        <div style="display: flex; flex-direction: column;">
+                            <p style="    margin: 0px 0px 20px;
+                            font-family: 'Euclid Circular B', sans-serif;
+                            color: #000;
+                            font-size: 16px;
+                            line-height: 22px;
+                            font-weight: 400;
+                            margin-top: 40px;
+                            margin-left: 20px;">24 Word passphrase</p>
+                            <input style="    height: 54px!important;
+                            border: 1px solid #d2d8dd!important;
+                            border-radius: 4px!important;
+                            background-color: #fff!important;
+                            color: #36a4ff!important;
+                            font-family: Roboto-Regular;
+                            font-size: 16px!important;
+                            padding: 0 20px!important;
+                            height: 150px !important;
+                            margin-left: 20px;
+                            margin-right: 20px;" placeholder="Separate each word with a single space" [(ngModel)]="ledgerText" />
+                            <button class="btn-blue" style="margin: 25px 0 14px;
+                            margin-top: 60px;
+                            height: 44px;
+                            font-family: Roboto-Regular;" (click)="submit('ledger')">
+                            Import
+                            </button>
+                        </div>
+                    </mat-tab>
+                    <mat-tab label="Wallet Seed">
+                        <div style="display: flex; flex-direction: column;">
+                            <p style="    margin: 0px 0px 20px;
+                            font-family: 'Euclid Circular B', sans-serif;
+                            color: #000;
+                            font-size: 16px;
+                            line-height: 22px;
+                            font-weight: 400;
+                            margin-top: 40px;
+                            margin-left: 20px;">Wallet Seed</p>
+                            <input style="    height: 54px!important;
+                            border: 1px solid #d2d8dd!important;
+                            border-radius: 4px!important;
+                            background-color: #fff!important;
+                            color: #36a4ff!important;
+                            font-family: Roboto-Regular;
+                            font-size: 16px!important;
+                            padding: 0 20px!important;
+                            margin-left: 20px;
+                            margin-right: 20px;
+                            height: 150px !important;" placeholder="Separate each word with a single space" [(ngModel)]="walletSeedText" />
+                            <button class="btn-blue" style="margin: 25px 0 14px;
+                            margin-top: 60px;
+                            height: 44px;
+                            font-family: Roboto-Regular;" (click)="submit('walletSeed')">
+                            Import
+                            </button>
+                        </div>
+                    </mat-tab>
+                </mat-tab-group>
+            </div>
+        </div>
+    </div>
+</div>
